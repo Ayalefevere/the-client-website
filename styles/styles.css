@@ -73,6 +73,18 @@
 
     /* main */
 
+    .paginas {
+        margin-top: 50px;
+        color: #A3A2B7;
+        font-size: 14px;
+    }
+
+    .pageactive {
+        color:#1D194E;
+        font-weight: bold;
+    }
+    
+
     .search {
         margin-top: 40px;
         --padding: 10px;
