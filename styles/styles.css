@@ -1,4 +1,15 @@
 /* CSS */
+
+body {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding:10px;
+  max-width: 320px;
+  font-family: arial;
+}
+
+
+
  header {
     display: flex;
     justify-content: space-between;
@@ -47,6 +58,7 @@
         .ham-menu span:nth-child(3) {
         top: 75%;
         }
+
     .off-screen-menu {
         max-width: 402px;
         background-color: #1d194e;
