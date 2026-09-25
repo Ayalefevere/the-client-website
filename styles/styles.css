@@ -130,6 +130,76 @@ body {
     .search-input::placeholder,
     .material-symbols-outlined {
         color: lightgrey;
+
+    .categorieblok {
+        margin-top: 50px;
+    }    
+
+        .categoriedeel {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 10px;
+        }
+
+        .categorietitel1 {
+            background-color: #4FBBC2;
+            color: white;
+            font-size: 15px;
+            height: 40px;
+            margin-bottom: 20px;
+
+            display: flex;
+            align-items: center;    
+            justify-content: center;   
+
+        }
+
+
+        .categorietitel2 {
+            background-color: #F96C4F;
+            color: white;
+            font-size: 15px;
+            height: 40px;
+            margin-bottom: 20px;
+            /* text-align: center; */
+            
+            display: flex;
+            align-items: center;    
+            justify-content: center;   
+             }
+
+            .categoriedeel article {
+            margin-top: 15px;
+            }
+
+            .categoriedeel img {
+            width: 145px;
+            }
+
+        .categoriedeel h3 {
+        font-size: 11px;
+        margin-top: 0px;
+        margin-bottom: 5px;
+        }
+
+
+            .categoriedeel article:nth-of-type(7) {
+                grid-column: 1 / -1;
+            }
+
+            .categoriedeel article:nth-of-type(7) img {
+                width: 100%;
+            }
+
+
+            .categoriedeel article:nth-of-type(10) {
+                grid-column: 1 / -1;
+            }
+
+            .categoriedeel article:nth-of-type(10) img {
+                width: 100%;
+            }
+
     }
 
     .search .fotosearch {
