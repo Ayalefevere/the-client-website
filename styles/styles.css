@@ -326,4 +326,22 @@ body {
         }
         
 
+
+    footer {
+        background-color: #1D194E;
+        position: absolute;
+        left: 0;
+        color: white;
+        margin-top: 50px;
+    }
+
+.footercontent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+    footer .logo {
+        width: 150px;
     }
