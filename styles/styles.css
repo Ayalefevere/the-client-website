@@ -171,16 +171,31 @@ body {
     }
 
     .categorie {
-        display: flex;
-        width: 90px;
-        height: 120px;
-        justify-items: center;
+    display: flex;
+    width: 90px;
+    height: 120px;
+    justify-items: center;
     }
 
-        .categorie img {
-            height: 70px;
-            width: auto;
+       .categorie img {
+        height: 70px;
+        width: auto;
         }
+
+    .categorie0{
+    display: flex;
+    width: 90px;
+    height: 120px;
+    justify-items: center;
+    }
+
+        .categorie0 img {
+        height: 70px;
+        width: auto;
+        opacity: 50%;
+        }
+
+     
 
         .categorie1 {
             text-decoration: underline;
@@ -218,6 +233,8 @@ body {
             text-decoration-thickness: 1.5px;
         }
 
+
+   
 
     .categorieblok {
         margin-top: 50px;
