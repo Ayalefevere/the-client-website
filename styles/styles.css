@@ -153,20 +153,71 @@ body {
             color: lightgrey;
         }
 
+
+.categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 30px;
+    column-gap: 10px;
+    row-gap: 20px;
+}
+
+    .categories a, a:visited {
+        text-decoration: none;
+        color: #1D194E;
+        font-size: 13px;
+        text-align: center;
+        justify-items: center;
     }
 
-    .search-input {
-        font-size: 15px;
-        outline: none;
-        border: none;
-        flex:1;
-        width: 210px;
+    .categorie {
+        display: flex;
+        width: 90px;
+        height: 120px;
+        justify-items: center;
     }
 
+        .categorie img {
+            height: 70px;
+            width: auto;
+        }
 
-    .search-input::placeholder,
-    .material-symbols-outlined {
-        color: lightgrey;
+        .categorie1 {
+            text-decoration: underline;
+            text-decoration-color:#4FBBC2;
+            text-decoration-thickness: 1.5px;
+        }
+
+       .categorie2 {
+            text-decoration: underline;
+            text-decoration-color:#F96C4F;
+            text-decoration-thickness: 1.5px;
+        }
+
+       .categorie3 {
+            text-decoration: underline;
+            text-decoration-color:#B48EBA;
+            text-decoration-thickness: 1.5px;
+        }
+
+       .categorie4 {
+            text-decoration: underline;
+            text-decoration-color:#B0B64C;
+            text-decoration-thickness: 1.5px;
+        }
+
+       .categorie5 {
+            text-decoration: underline;
+            text-decoration-color:#BD364E ;
+            text-decoration-thickness: 1.5px;
+        }
+
+       .categorie6 {
+            text-decoration: underline;
+            text-decoration-color:#2F739B;
+            text-decoration-thickness: 1.5px;
+        }
+
 
     .categorieblok {
         margin-top: 50px;
