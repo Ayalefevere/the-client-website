@@ -288,10 +288,42 @@ body {
                 width: 100%;
             }
 
+
+
+.paginanummer ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: #A3A2B7;
+    font-size: 11px;
+    padding: 0;
+    margin-top: 40px;
+        width: 100%;
+}
+
+.paginanummer a {
+    text-decoration: none;
+     color: #A3A2B7;
+}
+
+
+    .paginanummer a:visited {
+        color: #1D194E;
+        text-decoration: none;
+        font-weight: bold;
     }
 
-    .search .fotosearch {
-        width: auto;
-        height: 25px;
-        color: lightgrey;
+    .paginanummer a:hover {
+        color: #1D194E;
+        text-decoration: underline;
+        text-decoration-color: #1D194E;
+        text-underline-offset: 1px;
+    }
+
+        .activepage {
+            color:#1D194E;
+            font-weight: bold;
+        }
+        
+
     }
