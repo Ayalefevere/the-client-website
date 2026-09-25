@@ -1,4 +1,6 @@
-/* CSS */
+
+/* MOBILE */
+
 
 body {
   box-sizing: border-box;
@@ -7,8 +9,6 @@ body {
   max-width: 320px;
   font-family: arial;
 }
-
-
 
  header {
     display: flex;
@@ -87,15 +87,33 @@ body {
 
     .paginas {
         margin-top: 50px;
-        color: #A3A2B7;
         font-size: 14px;
+        color: #A3A2B7;
+        text-decoration: none;
     }
 
     .pageactive {
         color:#1D194E;
         font-weight: bold;
     }
+
+        .paginas a {
+            color: #A3A2B7;
+            text-decoration: none;
+            }   
     
+            .paginas a:visited {
+                color: #A3A2B7;
+                text-decoration: none;
+            }
+
+            .paginas a:hover {
+                color: #A3A2B7;
+                text-decoration: underline;
+                text-decoration-color: #A3A2B7;
+                text-underline-offset: 1px;
+            }
+
 
     .search {
         margin-top: 40px;
