@@ -1,7 +1,7 @@
 
 /* MOBILE */
 
-
+/* Dit is voor de hele pagina */
 body {
   box-sizing: border-box;
   margin: 0 auto;
@@ -10,24 +10,21 @@ body {
   font-family: "rigid-square", sans-serif;
 }
 
- header {
+/* Dit is de header */
+header {
     display: flex;
     justify-content: space-between;
     padding-top: 0; 
     align-items: center;
 }
 
+    /* Dit is het logo  */
     img { 
         height: auto;
         width: 53px;
     }
 
-    search > svg {
-        width: 35px;
-        height: 35px;
-    } 
-
-
+     /* Dit is de navigatie  */
     nav {
         display: flex;
         justify-content: end;
@@ -35,56 +32,66 @@ body {
         gap: 20px;
     }
 
-    .ham-menu {
-        height: 40px;
-        width: 40px;
-        position: relative;
-    }
+        /* Dit de search icon */
+        svg {
+            height: 35px;
+            color: #1D194E;
+        } 
 
-       .ham-menu span {
-        height: 4px;
-        width: 100%;
-        background-color: #1d194e;
-        position: absolute;
-        top: 50%;
-        left:50%;
-        transform: translate(-50%, -50%);
-    }
-
-        .ham-menu span:nth-child(1) {
-        top: 25%;
+        /* Dit is de hamburger menu  */
+        .ham-menu {
+            height: 40px;
+            width: 40px;
         }
 
-        .ham-menu span:nth-child(3) {
-        top: 75%;
-        }
+        /* Dit zijn de streepje in de hamburger menu */
+            .ham-menu span {
+                height: 4px;
+                width: 100%;
+                background-color: #1d194e;
+                position: absolute;
+                top: 50%;
+                left:50%;
+                transform: translate(-50%, -50%);
+            }
 
-    .off-screen-menu {
-        max-width: 402px;
-        background-color: #1d194e;
-        color: #FEB51E;
-        width: 100%;
-        max-width: 300px;
-        height: 500px;
-        position: fixed;
-        top: 0;
-        right: -350px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: left;
-        font-size: 20px;
-        transition: 1s ease;
-    }
+                .ham-menu span:nth-child(1) {
+                top: 25%;
+                }
 
-        ul {
-        list-style: none;
-        }
+                .ham-menu span:nth-child(3) {
+                top: 75%;
+                }
+
+        /* Dit is het scherm dat verschijnt als je op de hamburger menu drukt         */
+        /* .off-screen-menu {
+            max-width: 402px;
+            background-color: #1d194e;
+            color: #FEB51E;
+            width: 100%;
+            max-width: 300px;
+            height: 500px;
+            position: fixed;
+            top: 0;
+            right: -350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+            font-size: 20px;
+            transition: 1s ease;
+        } */
+        
+        /* Dit is voor de onderwerpen in de menu */
+          /*   ul {
+            list-style: none;
+            } */
 
    
 
-    /* main */
+/* Dit is de main */
 
+    /* Dit is voor het stukje met de pagina's */
     .paginas {
         margin-top: 50px;
         font-size: 14px;
@@ -92,11 +99,13 @@ body {
         text-decoration: none;
     }
 
+    /* Voor de huidige pagina waar je op kijkt*/
     .pageactive {
         color:#1D194E;
         font-weight: bold;
     }
 
+    /* Dit is voor de tekst home, want die is een link met een hover */
         .paginas a {
             color: #A3A2B7;
             text-decoration: none;
@@ -119,6 +128,7 @@ body {
         margin-top: 40px;
     }
 
+    /* Dit is voor de hele search balk */
     .search {
         margin-top: 40px;
         width: max-content;
@@ -194,6 +204,7 @@ body {
     }
 
         .categorie0 img {
+        /* Dit is voor de filter icon foto */
         height: 70px;
         width: auto;
         opacity: 50%;
@@ -223,6 +234,7 @@ body {
             text-decoration: underline;
             text-decoration-color:#B0B64C;
             text-decoration-thickness: 1.5px;
+        /* Dit is voor de categorieen/methodes met foto en tekst */
         }
 
        .categorie5 {
@@ -235,22 +247,23 @@ body {
             text-decoration: underline;
             text-decoration-color:#2F739B;
             text-decoration-thickness: 1.5px;
+        /* Dit is de tekst bij de categorie */
         }
 
+        /* Dit is de foto bij de categorie */
 
    
+            /* Dit is de styling voor de tekst underline van alle methodes */
 
+
+
+    /* Dit is blokje voor de methode  */
     .categorieblok {
         margin-top: 50px;
     }    
 
-        .categoriedeel {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            column-gap: 10px;
-        }
-
-        .categorietitel1 {
+        /* Dit zijn de titels van de methodes blokje */
+            .categorietitel1 {
             background-color: #4FBBC2;
             color: white;
             font-size: 15px;
@@ -260,9 +273,7 @@ body {
             display: flex;
             align-items: center;    
             justify-content: center;   
-
         }
-
 
         .categorietitel2 {
             background-color: #F96C4F;
@@ -270,13 +281,20 @@ body {
             font-size: 15px;
             height: 40px;
             margin-bottom: 20px;
-            /* text-align: center; */
             
             display: flex;
             align-items: center;    
             justify-content: center;   
-             }
+        }
 
+        /* In dit staat het overzicht van categorieen met alle info over de methodes ofzo */
+        .categoriedeel {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 10px;
+        }
+
+            /* In het categorien deel staan artikelen met de foto en tekst */
             .categoriedeel article {
             margin-top: 15px;
             }
@@ -300,7 +318,6 @@ body {
                 width: 100%;
             }
 
-
             .categoriedeel article:nth-of-type(10) {
                 grid-column: 1 / -1;
             }
@@ -309,16 +326,15 @@ body {
                 width: 100%;
             }
 
-
-
-.paginanummer ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    color: #A3A2B7;
-    font-size: 11px;
-    padding: 0;
-    margin-top: 40px;
+    /* Dit is de paginanummering zodat je naar meer methodes kan switchen        */
+    .paginanummer ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        color: #A3A2B7;
+        font-size: 11px;
+        padding: 0;
+        margin-top: 40px;
         width: 100%;
 }
 
@@ -345,9 +361,10 @@ body {
             color:#1D194E;
             font-weight: bold;
         }
-        
 
+        /* Styling voor de active pagina waar je nu op zit */
 
+/* Dit is de footer */
 footer {
     background-color: #1D194E;
     position: absolute;
@@ -356,6 +373,7 @@ footer {
     margin-top: 50px;
 }
 
+    /* Hierin staat alle content van de footer */
     .footercontent {
         padding-top: 50px;
     }
@@ -364,6 +382,11 @@ footer {
          justify-content: center;
         display: grid;
         row-gap: 10px;
+        /* De bovenkant content van de footer dus logo en social icons */
+            /* Dit is het logo in footer */
+            /* De social icons */
+            /* Foto van de social icons */
+    /* Het menu in de footer         */
     }
 
         footer .logo {
@@ -376,10 +399,12 @@ footer {
             margin-top: 20px;
             display: flex;
             gap: 15px;
+        /* Dit zorgt ervoor dat 1 summary geen marker heeft */
         }
 
         footer .socialicons img {
             width:35px;
+        /* Dit zorgt dat de marker na de tekst komt */
         }
 
         .menufooter{
@@ -401,12 +426,16 @@ footer {
     width: 80%;
  }
 
+        
+    /* Het onderste content gedeelte van de footer */
 
+    /* Dit is voor de copyright tekst */
 
  .footerend ul {
     display: flex;
     justify-content: center;
     gap: 50px;
  }
+        /* Voor de onderste 3 stukjes tekst */
 
 

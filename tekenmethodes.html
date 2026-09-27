@@ -10,12 +10,15 @@
 </head>
 <body>
     
+
+<!-- Dit is de header van de website met logo en navigatie hamburger menu    -->
 <header>
     <a href="index.html"><img src="assets/favicon.svg" alt="Logo Visual Thinking"></a>
 
     <nav>
         <search><svg xmlns="http://www.w3.org/2000/svg" alt="search icon" viewBox="0 0 650 650"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"/></svg></search>
         
+    <!-- Dit is de hamburger menu met de streepjes    -->    
         <div class="ham-menu">
             <span></span>
             <span></span>
@@ -23,74 +26,36 @@
         </div>
     </nav>
     
-    
-    <div class="off-screen-menu">
+    <!-- Dit is de navigatie menu als je op de hamburger menu hebt geklikt.   --> 
+    <!-- <div class="off-screen-menu">
         <ul>
             <li> Oefenen </li>
             <li> Verdiepen</li> 
             <li>Inspiratie</li> 
             <li> Over </li>     
         </ul>
-    </div>
+    </div> -->
 </header>
 
 <main>
 
+    <!-- Hier zie je hoe je op de huidige pagina bent gekomen dus op welke pagina's je hebt gedrukt.   --> 
     <p class="paginas"><a href="index.html">Home</a> > Oefenen > <span class="pageactive"> Tekenmethodes </span> </p>
  
     <h1> Tekenmethodes</h1>
 
-        <div class="categories">
-            <div class="categorie">
-            <a href="index.html"> 
-                <img src="assets/settings.png">
-            </a></div>
-            <div class="categorie0">
-            <a href="index.html"> 
-                <img src="assets/settings.png">
-                <span>Bekijk alles</span>
-            </a></div>
-            <div class="categorie0">
-            <a href="index.html"> 
-                <img src="assets/settings.png">
-                <span>Op vraag</span>
-            </a></div>
-            <div class="categorie0">
-            <a href="index.html"> 
-                <img src="assets/settings.png">
-                <span class="categorie1">Leren over jezelf en Reflecteren</span>
-            </a></div>
-            <div class="categorie0">
-            <a href="index.html"> 
-                <img src="assets/settings.png">
-                <span class="categorie2">Onderzoeken en Begrijpen</span>
-            </a></div>
-            <div class="categorie0">
-            <a href="index.html"> 
-                <img src="assets/settings.png">
-                <span class="categorie3">Creatief denken</span>
-            </a></div>
-            <div class="categorie0">
-            <a href="index.html"> 
-                <img src="assets/settings.png">
-                <span class="categorie4">Organiseren en Plannen</span>
-            </a></div>
-            <div class="categorie0">
-            <a href="index.html"> 
-                <img src="assets/settings.png">
-                <span class="categorie5">Communiceren en Presenteren</span>
-            </a></div>
-            <div class="categorie0">
-            <a href="index.html"> 
-                <img src="assets/settings.png">
-                <span class="categorie6">Leren over anderen</span>
-            </a></div>
-        </div>
+    <!-- Dit is de zoekbalk met rechts een foto icoontje waar je een foto kan toevoegen of uploaden?    --> 
+    <div class="search">
+        <span class="material-symbols-outlined"> search</span>
+        <input class="search-input" type="search" placeholder="Zoeken">        
+        <img src="assets/add_a_photo.svg" alt="add photo icon" class="fotosearch">
+    </div>
 
-    <div class="categorieblok"></div>    
+    <!-- Hier kun je filteren op tekenmethode/categorie    --> 
+    <!-- Dit is de gedeelte voor methode Leren over jezelf en Reflecteren met elke soort  -->
+    <section class="categorieblok">  
         <h2 class="categorietitel1">Leren over jezelf en Reflecteren</h2>
         <article><iframe src="https://www.youtube.com/watch?v=UQa9sK42OOM"></iframe> </article>
-        <!-- <div class="youtube"> <img src="assets/youtube-video.png"></div> -->
     <div class="categoriedeel"> 
         <article>
             <img src="assets/roadmap1.png">
@@ -158,6 +123,7 @@
 
         <article><iframe src="https://www.youtube.com/watch?v=UQa9sK42OOM"></iframe> </article>
         <!-- <div class="youtube"> <img src="assets/youtube-video.png"></div> -->
+
         <div class="categoriedeel"> 
         <article>
             <img src="assets/roadmap2.png">
@@ -233,6 +199,7 @@
 <footer> 
 
     <div class="footercontent">
+        <!-- Dit is de bovenkant van de footer met logo en social icons -->
         <div class="footerheader">
             <img src="assets/logo-zonder-white.png" class="logo" alt="Logo Visual Thinking">
 
