@@ -34,6 +34,7 @@ header {
 
         /* Dit de search icon */
         svg {
+            width: 35px;
             height: 35px;
             color: #1D194E;
         } 
@@ -42,6 +43,7 @@ header {
         .ham-menu {
             height: 40px;
             width: 40px;
+            position: relative;
         }
 
         /* Dit zijn de streepje in de hamburger menu */
@@ -93,7 +95,7 @@ header {
 
     /* Dit is voor het stukje met de pagina's */
     .paginas {
-        margin-top: 50px;
+        margin-top: 40px;
         font-size: 14px;
         color: #A3A2B7;
         text-decoration: none;
