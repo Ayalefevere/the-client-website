@@ -135,46 +135,33 @@ header {
         display: flex;
         align-items: center;
         padding: 10px;
-        border: 1px solid lightgrey;
+        border: 1px solid #D1D0DB;
         gap:10px;
     }
 
-        .material-symbols-outlined {
-        color: lightgrey;
-        font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 24
-        }
-
-        .search-input::placeholder,
-        .material-symbols-outlined {
-        color: lightgrey;
-        }
-
-        .search-input {
-            font-size: 15px;
-            outline: none;
-            border: none;
-            flex:1;
-            width: 210px;
-        }
-
-        .search .fotosearch {
-            width: auto;
-            height: 25px;
-            color: lightgrey;
-        }
-
-
-.categories {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 30px;
-    column-gap: 10px;
-    row-gap: 20px;
-}
+        /* Voor de search icon */
+            .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+            }
+        
+        /* Voor de kleur van de zoekbalk tekst en icon */
+            .search-input::placeholder,
+            .material-symbols-outlined {
+            color: #D1D0DB;
+            }
+        
+            /* Dit is de zoekbalk */
+            .search-input {
+                font-size: 15px;
+                outline: none;
+                border: none;
+                flex:1;
+                width: 210px;
+            }
 
     .categories a, a:visited {
         text-decoration: none;
@@ -248,6 +235,8 @@ header {
             text-decoration-color:#2F739B;
             text-decoration-thickness: 1.5px;
         /* Dit is de tekst bij de categorie */
+        .categorie0 span {
+            color: #1D194E;
         }
 
         /* Dit is de foto bij de categorie */
@@ -265,7 +254,7 @@ header {
         /* Dit zijn de titels van de methodes blokje */
             .categorietitel1 {
             background-color: #4FBBC2;
-            color: white;
+            color: #F3F3F6;
             font-size: 15px;
             height: 40px;
             margin-bottom: 20px;
@@ -277,7 +266,7 @@ header {
 
         .categorietitel2 {
             background-color: #F96C4F;
-            color: white;
+            color: #F3F3F6;
             font-size: 15px;
             height: 40px;
             margin-bottom: 20px;
@@ -344,10 +333,10 @@ header {
 }
 
 
-    .paginanummer a:visited {
-        color: #1D194E;
+    /* Dit is voor de link dat je naar een andere pagina kan */
+    .paginanummer a {
         text-decoration: none;
-        font-weight: bold;
+        color: #A3A2B7;
     }
 
     .paginanummer a:hover {
@@ -357,12 +346,18 @@ header {
         text-underline-offset: 1px;
     }
 
-        .activepage {
-            color:#1D194E;
-            font-weight: bold;
+        .paginanummer a:hover {
+            color: #A3A2B7;
+            text-decoration: underline;
+            text-decoration-color: #A3A2B7;
+            text-underline-offset: 1px;
         }
 
         /* Styling voor de active pagina waar je nu op zit */
+        .paginanummer .activepage {
+            color:#1D194E;
+            }
+            
 
 /* Dit is de footer */
 footer {
