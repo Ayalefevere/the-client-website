@@ -414,23 +414,33 @@ footer {
             font-weight: bold;
         }
 
- .footerend p {
-    display: grid;
-    justify-content: center;
-    margin-top: 60px;
-    width: 80%;
- }
+        .menufooter a:hover {
+        color: #D1D0DB;
+        text-decoration: underline;
+        }
 
         
     /* Het onderste content gedeelte van de footer */
+    .footerend {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 70px;
+        text-align: center;
+        color: #F3F3F6;
+    }
 
     /* Dit is voor de copyright tekst */
+    .footerend p {
+        white-space: pre-line;
+    }   
 
- .footerend ul {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
- }
         /* Voor de onderste 3 stukjes tekst */
+        .footerend ul {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            list-style: none;
+        }
 
 
