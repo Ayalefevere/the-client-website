@@ -163,87 +163,92 @@ header {
                 width: 210px;
             }
 
-    .categories a, a:visited {
-        text-decoration: none;
-        color: #1D194E;
-        font-size: 13px;
-        text-align: center;
-        justify-items: center;
+            /* Dit is de foto search icon foto */
+            .search .fotosearch {
+                width: auto;
+                height: 25px;
+            }
+
+    /* Dit zijn de tekenmethodes/categorieen blok */
+    .methodes {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 30px;
+        column-gap: 10px;
+        row-gap: 20px;
     }
 
-    .categorie {
-    display: flex;
-    width: 90px;
-    height: 120px;
-    justify-items: center;
-    }
-
-       .categorie img {
-        height: 70px;
-        width: auto;
+        /* Dit is voor de link van de methodes */
+        .methodes a, a:visited {
+            text-decoration: none;
+            font-size: 13px;
+            text-align: center;
+            justify-items: center;
         }
 
-    .categorie0{
-    display: flex;
-    width: 90px;
-    height: 120px;
-    justify-items: center;
-    }
-
-        .categorie0 img {
         /* Dit is voor de filter icon foto */
+        .categorie img {
         height: 70px;
         width: auto;
-        opacity: 50%;
         }
 
-     
-
-        .categorie1 {
-            text-decoration: underline;
-            text-decoration-color:#4FBBC2;
-            text-decoration-thickness: 1.5px;
         }
 
-       .categorie2 {
-            text-decoration: underline;
-            text-decoration-color:#F96C4F;
-            text-decoration-thickness: 1.5px;
-        }
-
-       .categorie3 {
-            text-decoration: underline;
-            text-decoration-color:#B48EBA;
-            text-decoration-thickness: 1.5px;
-        }
-
-       .categorie4 {
-            text-decoration: underline;
-            text-decoration-color:#B0B64C;
-            text-decoration-thickness: 1.5px;
         /* Dit is voor de categorieen/methodes met foto en tekst */
+        .categorie0 {
+        display: flex;
+        width: 90px;
+        height: 120px;
+        justify-items: center;
         }
 
-       .categorie5 {
-            text-decoration: underline;
-            text-decoration-color:#BD364E ;
-            text-decoration-thickness: 1.5px;
-        }
-
-       .categorie6 {
-            text-decoration: underline;
-            text-decoration-color:#2F739B;
-            text-decoration-thickness: 1.5px;
         /* Dit is de tekst bij de categorie */
         .categorie0 span {
             color: #1D194E;
         }
 
         /* Dit is de foto bij de categorie */
+            .categorie0 img {
+            height: 70px;
+            width: auto;
+            opacity: 20%;
+            }
 
-   
             /* Dit is de styling voor de tekst underline van alle methodes */
+            .categorie1 {
+                text-decoration: underline;
+                text-decoration-color:#4FBBC2;
+                text-decoration-thickness: 1.5px;
+            }
 
+            .categorie2 {
+                    text-decoration: underline;
+                    text-decoration-color:#F96C4F;
+                    text-decoration-thickness: 1.5px;
+                }
+
+            .categorie3 {
+                    text-decoration: underline;
+                    text-decoration-color:#B48EBA;
+                    text-decoration-thickness:1.5px;
+                }
+            .categorie4 {
+                    text-decoration: underline;
+                    text-decoration-color:#B0B64C;
+                    text-decoration-thickness: 1.5px;
+                }
+
+            .categorie5 {
+                    text-decoration: underline;
+                    text-decoration-color:#BD364E ;
+                    text-decoration-thickness: 1.5px;
+                }
+
+            .categorie6 {
+                    text-decoration: underline;
+                    text-decoration-color:#2F739B;
+                    text-decoration-thickness: 1.5px;
+                }
 
 
     /* Dit is blokje voor de methode  */
@@ -288,17 +293,21 @@ header {
             margin-top: 15px;
             }
 
-            .categoriedeel img {
-            width: 145px;
-            }
+                /* Foto in de article */
+                .categoriedeel img {
+                width: 145px;
+                }
 
-        .categoriedeel h3 {
-        font-size: 11px;
-        margin-top: 0px;
-        margin-bottom: 5px;
-        }
+                /* De tekst in de artikel */
+                .categoriedeel article h3 {
+                font-size: 11px;
+                margin-top: 0px;
+                margin-bottom: 5px;
+                font-weight: normal;
+                color: #1D194E;
+                }
 
-
+            /* Dit is om 2 onderdelen in het deel over 2 kolommen te doen    */
             .categoriedeel article:nth-of-type(7) {
                 grid-column: 1 / -1;
             }
@@ -370,17 +379,36 @@ footer {
 
     /* Hierin staat alle content van de footer */
     .footercontent {
-        padding-top: 50px;
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
 
-    .footerheader {
-         justify-content: center;
-        display: grid;
-        row-gap: 10px;
         /* De bovenkant content van de footer dus logo en social icons */
+        .footerheader {
+            justify-content: center;
+            display: grid;
+            row-gap: 10px;
+        }
+
             /* Dit is het logo in footer */
+            footer .logo {
+                width: 160px;
+                display: flex;
+            }
+
             /* De social icons */
+            footer .socialicons {
+                margin-top: 20px;
+                display: flex;
+                gap: 15px;
+            }
+
             /* Foto van de social icons */
+            footer .socialicons img {
+                width:45px;
+                height: 45px;
+            }
+
     /* Het menu in de footer         */
     .menufooter{
     display: grid;
@@ -398,17 +426,11 @@ footer {
         list-style: none;
         }
 
-        footer .socialicons {
-            margin-top: 20px;
-            display: flex;
-            gap: 15px;
         /* Dit zorgt ervoor dat 1 summary geen marker heeft */
         summary.geen-pijl:after {
         content: none;
         }
 
-        footer .socialicons img {
-            width:35px;
         /* Dit zorgt dat de marker na de tekst komt */
         summary:after {
         content: "❯";
