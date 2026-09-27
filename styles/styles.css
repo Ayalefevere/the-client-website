@@ -382,12 +382,20 @@ footer {
             /* De social icons */
             /* Foto van de social icons */
     /* Het menu in de footer         */
+    .menufooter{
+    display: grid;
+    justify-content:start;
+    max-width: 320px;
+    margin: 70px auto;
+    box-sizing: border-box;
     }
 
-        footer .logo {
-            width: 130px;
-            justify-content: center;
-            display: flex;
+        /* Het menu naar de pagina's in een summary */
+        .menufooter summary {
+        color: #FEB51E;
+        font-size: 23px;
+        font-weight: bold;
+        list-style: none;
         }
 
         footer .socialicons {
@@ -395,23 +403,29 @@ footer {
             display: flex;
             gap: 15px;
         /* Dit zorgt ervoor dat 1 summary geen marker heeft */
+        summary.geen-pijl:after {
+        content: none;
         }
 
         footer .socialicons img {
             width:35px;
         /* Dit zorgt dat de marker na de tekst komt */
+        summary:after {
+        content: "❯";
+        position: absolute;
+        right: 45px;
         }
 
-        .menufooter{
-            display: grid;
-            justify-content: center;
-            margin-top: 50px;
+        /* Dit is voor de tekst in de details */
+        .menufooter details {
+        font-size: 16px;
+        color: #F3F3F6;
         }
 
-        .menufooter summary {
-            color: #FEB51E;
-            font-size: 20px;
-            font-weight: bold;
+        /* De link in de details die naar een pagina gaat */
+        .menufooter a, a:visited {
+        color: #F3F3F6;
+        text-decoration: none;
         }
 
         .menufooter a:hover {
