@@ -192,8 +192,6 @@ header {
         width: auto;
         }
 
-        }
-
         /* Dit is voor de categorieen/methodes met foto en tekst */
         .categorie0 {
         display: flex;
@@ -232,6 +230,7 @@ header {
                     text-decoration-color:#B48EBA;
                     text-decoration-thickness:1.5px;
                 }
+
             .categorie4 {
                     text-decoration: underline;
                     text-decoration-color:#B0B64C;
@@ -334,13 +333,8 @@ header {
         padding: 0;
         margin-top: 40px;
         width: 100%;
-}
-
-.paginanummer a {
-    text-decoration: none;
-     color: #A3A2B7;
-}
-
+        list-style: none;
+    }
 
     /* Dit is voor de link dat je naar een andere pagina kan */
     .paginanummer a {
@@ -348,12 +342,10 @@ header {
         color: #A3A2B7;
     }
 
-    .paginanummer a:hover {
-        color: #1D194E;
-        text-decoration: underline;
-        text-decoration-color: #1D194E;
-        text-underline-offset: 1px;
-    }
+        .paginanummer a:visited {
+            color: #A3A2B7;
+            text-decoration: none;
+        }
 
         .paginanummer a:hover {
             color: #A3A2B7;
@@ -373,8 +365,7 @@ footer {
     background-color: #1D194E;
     position: absolute;
     left: 0;
-    color: #F3F3F6;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
     /* Hierin staat alle content van de footer */
