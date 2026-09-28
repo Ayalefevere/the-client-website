@@ -35,20 +35,31 @@ header {
         width: 53px;
     }
 
-     /* Dit is de navigatie  */
-    nav {
+    /* Navigatiemenu van desktop verbergen */
+    .navdesktop {
+        display: none;
+    }
+
+
+     /* Dit is icon search en navigatie */
+    .icoontjes {
         display: flex;
         justify-content: end;
         align-items: center;
         gap: 20px;
     }
 
-        /* Dit de search icon */
-        svg {
-            width: 35px;
-            height: 35px;
-            color: #1D194E;
-        } 
+        /* Zorgt ervoor dat de icoontjes verborgen staan op mobile die in desktop versie staan */
+        .icoontjes img {
+            display: none;
+        }
+
+        /* Icon search is zichtbaar op mobile met dit */
+        .icoontjes .searchicon {
+        display: block;
+        height: 30px;
+        width: 30px;
+        }
 
         /* Dit is de hamburger menu  */
         .ham-menu {
@@ -75,6 +86,11 @@ header {
                 .ham-menu span:nth-child(3) {
                 top: 75%;
                 }
+
+            /* Button in de desktop versie verbergen */
+            .icoontjes button {
+            display: none;
+            }
 
         /* Dit is het scherm dat verschijnt als je op de hamburger menu drukt         */
         /* .off-screen-menu {
