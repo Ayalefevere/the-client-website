@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visual Thinking - Tekenmethodes</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/desktop.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search">
     <link rel="stylesheet" href="https://use.typekit.net/amj1ims.css">
 </head>
@@ -12,12 +13,18 @@
     
 <!-- Dit is de header van de website met logo en navigatie hamburger menu    -->    
 <header>
-    <a href="index.html"><img src="assets/favicon.svg" alt="Logo Visual Thinking"></a>
+   <div class="leftheader">
+        <a href="index.html"><img src="assets/favicon.svg" alt="Logo Visual Thinking" class="logoheader"></a>
 
     <nav>
         <search><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 650"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"/></svg></search>
         
         <!-- Dit is de hamburger menu met de streepjes    --> 
+    <nav class="icoontjes">
+        <img src="assets/search vector.svg" alt="search icon" class="searchicon">
+        <img src="assets/person vector.svg" alt="person icon">
+        <img src="assets/heart vector.svg" alt="heart icon">
+        <button> Materiaal indienen</button>
         <div class="ham-menu">
             <span></span>
             <span></span>
@@ -25,15 +32,16 @@
         </div>
     </nav>
     
-    <!-- Dit is de navigatie menu als je op de hamburger menu hebt geklikt.   --> 
+    <!-- Dit is de navigatie menu als je op de hamburger menu hebt geklikt in de mobile  --> 
     <!-- <div class="off-screen-menu">
         <ul>
             <li> Oefenen </li>
             <li> Verdiepen</li> 
-            <li>Inspiratie</li> 
-            <li> Over </li>     
+            <li> Inspiratie </li> 
+            <li> Over </li>    
+            <button> Materiaal indienen> 
         </ul>
-    </div> -->
+    </div> --> 
 </header>
 
 <main>
@@ -43,10 +51,86 @@
     <!-- Tijdelijk tekst omdat hamburger menu nog niet werkt-->
     <div class="home"><a href="tekenmethodes.html"> Tekenmodes pagina</a></div>
 
-    <p> Ik heb alleen aan mobile repsonsive gewerkt. Deze pagina moet nog worden gedaan.</p>
+    <p> Deze pagina moet nog worden gedaan.</p>
 
  
 </main>
+
+
+<footer> 
+<!-- Dit is de hele footer -->
+    <div class="footercontent">
+        <!-- Dit is de bovenkant van de footer met logo en social icons -->
+        <div class="footerheader">
+            <img src="assets/logo-zonder-white.png" class="logo" alt="Logo Visual Thinking">
+
+            <div class="socialicons">
+                <img src="assets/instagram.png" alt="Sociale Media icon Instagram">
+                <img src="assets/youtubelogo.png" alt="Sociale Media icon YouTube">
+                <img src="assets/linkedln.png" alt="Sociale Media icon Linkedln">
+            </div>
+        </div>
+
+        <!-- Menu in de footer met summary -->    
+        <nav class="menufooter">
+            <details>
+            <summary> Oefenen</summary>
+            <p><a href="tekenmethodes.html"> Tekenmethodes</a></p>
+            <p> Curussen</p>
+            </details>
+            <details>
+            <summary> Verdiepen</summary> 
+            <p> Kennisclips</p>
+            <p> Artikelen</p>
+            </details>
+            <details >
+            <summary class="geen-pijl"> Inspiratie</summary>
+            </details>
+            <details>
+            <summary> Over</summary>
+            <p> Community</p>
+            </details>
+        </nav>
+
+        <nav class="menufooterdesktop">
+            <div>
+                <h3>Oefenen</h3>
+                    <p><a href="tekenmethodes.html"> Tekenmethodes</a></p>
+                    <p> Curussen</p>
+            </div>
+            <div>
+                <h3> Verdiepen</h3>
+                    <p> Kennisclips</p>
+                    <p> Artikelen</p>
+            </div>
+            <div>
+                <h3>Inspiratie</h3>
+            </div>
+            <div>
+                <h3> Over</h3>
+                    <p> Community</p>   
+            </div>
+        </nav>
+
+        <!-- Onderkant van de footer met copyright tekst en ander tekst-->
+        <div class="footerend">
+            <p> &copy 2026 Company Distributors. 
+                Designed & Developed by Charley Muhren</p>   
+            <ul>
+                <li>Terms</li>
+                <li>Privacy</li>
+                <li>Cookies</li>
+            </ul>
+        </div>
+   </div> 
+
+</footer>
+
+
+</body>
+</html>
+
+
 
 </body>
 </html>
