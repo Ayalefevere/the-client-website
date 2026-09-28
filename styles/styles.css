@@ -429,13 +429,18 @@ footer {
                 height: 45px;
             }
 
+    .menufooterdesktop {
+        display: none;
+    }
+
     /* Het menu in de footer         */
-    .menufooter{
+    .menufooter {
     display: grid;
     justify-content:start;
     max-width: 320px;
     margin: 70px auto;
     box-sizing: border-box;
+    gap: 30px;
     }
 
         /* Het menu naar de pagina's in een summary */
