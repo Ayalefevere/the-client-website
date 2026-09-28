@@ -91,7 +91,6 @@
         width: 1090px;
     }
 
-    
     /* Dit zijn de tekenmethodes/categorieen blok */
      .methodes {
     display: flex;
@@ -99,7 +98,7 @@
     column-gap: 50px;
     }
 
-/* Dit is blokje voor de methode  */
+    /* Dit is blokje voor de methode  */
     .categorieblok {
         margin-top: 50px;
     }    
@@ -164,18 +163,19 @@
     width: 100%;
     }
 
-
-         /* De bovenkant content van de footer dus logo en social icons */
+        /* De bovenkant content van de footer dus logo en social icons */
         .footerheader {
             row-gap: 10px;
             position: absolute;
             left: 210px;
         }
 
+        /* De menu in de footer van mobile verborgen */
         .menufooter {
             display: none;
         }
 
+        /* De menu in de footer van desktop */
         .menufooterdesktop {
         display: flex;
         flex-direction: row;
@@ -185,26 +185,26 @@
         gap: 80px;
         }
 
-        .menufooterdesktop h3 {
-            color: #FEB51E;
-        }
+            .menufooterdesktop h3 {
+                color: #FEB51E;
+            }
 
-        .menufooterdesktop p {
+            .menufooterdesktop p {
+                color: #F3F3F6;
+            }
+
+            /* De link in de details die naar een pagina gaat */
+            .menufooterdesktop a, a:visited {
             color: #F3F3F6;
-        }
+            text-decoration: none;
+            }
 
-        /* De link in de details die naar een pagina gaat */
-        .menufooterdesktop a, a:visited {
-        color: #F3F3F6;
-        text-decoration: none;
-        }
+            .menufooterdesktop a:hover {
+            color: #D1D0DB;
+            text-decoration: underline;
+            }
 
-        .menufooterdesktop a:hover {
-        color: #D1D0DB;
-        text-decoration: underline;
-        }
-
-        /* Het onderste content gedeelte van de footer */
+    /* Het onderste content gedeelte van de footer */
     .footerend {
         gap: 170px;
         margin-top: 350px;

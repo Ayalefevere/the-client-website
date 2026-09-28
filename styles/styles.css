@@ -429,13 +429,16 @@ footer {
                 height: 45px;
             }
 
+
+    /* De menu in de footer van desktop verborgen */        
     .menufooterdesktop {
         display: none;
     }
 
     /* Het menu in de footer         */
     .menufooter {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content:start;
     max-width: 320px;
     margin: 70px auto;
