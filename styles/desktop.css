@@ -34,7 +34,6 @@
         /* Dit zijn de icoontjes en button  */
         .icoontjes {
             display: flex;
-            justify-content: end;
             align-items: center;
             gap: 30px;
             margin-right: 170px;
@@ -132,10 +131,6 @@
                 }
 
             /* Dit is om 2 onderdelen in het deel over 2 kolommen te doen    */
-                iframe article:nth-of-type(1) {
-                grid-column: 1 / -1;
-            }
-
             .categoriedeel article:nth-of-type(7) {
                 grid-column: 3 / -1;
             }
@@ -217,10 +212,8 @@
 
         /* Voor de onderste 3 stukjes tekst */
         .footerend ul {
-            display: flex;
-            flex-direction: row;
             gap: 80px;
-            list-style: none;
+
         }
 
 

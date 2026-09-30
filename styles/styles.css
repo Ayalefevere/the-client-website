@@ -224,6 +224,7 @@ header {
         /* Dit is voor de categorieen/methodes met foto en tekst */
         .categorie0 {
         display: flex;
+        flex-direction: row;
         width: 90px;
         height: 120px;
         justify-items: center;
@@ -401,6 +402,7 @@ footer {
     .footercontent {
         padding-top: 80px;
         padding-bottom: 80px;
+
     }
 
         /* De bovenkant content van de footer dus logo en social icons */
@@ -412,8 +414,7 @@ footer {
 
             /* Dit is het logo in footer */
             footer .logo {
-                width: 160px;
-                display: flex;
+                width: 160px;            
             }
 
             /* De social icons */
@@ -430,7 +431,7 @@ footer {
             }
 
 
-    /* De menu in de footer van desktop verborgen */        
+    /* De menu in de footer van desktop */        
     .menufooterdesktop {
         display: none;
     }
@@ -502,7 +503,6 @@ footer {
         /* Voor de onderste 3 stukjes tekst */
         .footerend ul {
             display: flex;
-            flex-direction: row;
             gap: 50px;
             list-style: none;
         }
