@@ -1,15 +1,19 @@
 
 /* MOBILE */
 
-
-/* Voor de link tekst in de home, gaat weg */
-.home a:visited {
-color: grey;
+* {
+  box-sizing: border-box; 
 }
 
-.home a {
-color: grey;
-}
+/* IN DE HOME PAGINA */
+    /* Voor de link tekst in de home. Het gaat weg */
+    .home a {
+    color: grey;
+    }
+
+        .home a:visited {
+        color: grey;
+        }
 
 
 /* Dit is voor de hele pagina */
