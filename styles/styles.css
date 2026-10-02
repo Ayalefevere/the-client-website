@@ -15,8 +15,10 @@
         color: grey;
         }
 
+        
+/* TEKENMETHODES PAGINA */
 
-/* Dit is voor de hele pagina */
+/* Dit is voor de hele pagina voor alle devices */
 body {
   box-sizing: border-box;
   margin: 0 auto;
@@ -25,7 +27,8 @@ body {
   font-family: "rigid-square", sans-serif;
 }
 
-/* Dit is de header */
+/* HEADER */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -33,8 +36,8 @@ header {
     align-items: center;
 }
 
-    /* Dit is het logo  */
-    img { 
+    /* Dit is het logo in de header */
+    header img { 
         height: auto;
         width: 53px;
     }
@@ -44,8 +47,7 @@ header {
         display: none;
     }
 
-
-     /* Dit is icon search en navigatie */
+     /* Dit is icon search en hamburger menu */
     .icoontjes {
         display: flex;
         justify-content: end;
@@ -53,78 +55,53 @@ header {
         gap: 20px;
     }
 
-        /* Zorgt ervoor dat de icoontjes verborgen staan op mobile die in desktop versie staan */
-        .icoontjes img {
-            display: none;
-        }
-
-        /* Icon search is zichtbaar op mobile met dit */
+        /* Icon search is zichtbaar op mobile */
         .icoontjes .searchicon {
         display: block;
         height: 30px;
         width: 30px;
         }
 
-        /* Dit is de hamburger menu  */
+        /* Zorgt ervoor dat de icoontjes verborgen staan op mobile die in desktop versie staan */
+        .icoontjes img {
+            display: none;
+        }
+
+        /* Button in de desktop versie verbergen */
+        .icoontjes button {
+        display: none;
+        }
+
+        /* Dit is de hamburger menu op mobile  */
         .ham-menu {
             height: 40px;
             width: 40px;
             position: relative;
         }
 
-        /* Dit zijn de streepje in de hamburger menu */
-            .ham-menu span {
-                height: 4px;
-                width: 100%;
-                background-color: #1d194e;
-                position: absolute;
-                top: 50%;
-                left:50%;
-                transform: translate(-50%, -50%);
-            }
-
-                .ham-menu span:nth-child(1) {
-                top: 25%;
+            /* Dit zijn de streepje in de hamburger menu */
+                .ham-menu span {
+                    height: 4px;
+                    width: 100%;
+                    background-color: #1d194e;
+                    position: absolute;
+                    top: 50%;
+                    left:50%;
+                    transform: translate(-50%, -50%);
                 }
 
-                .ham-menu span:nth-child(3) {
-                top: 75%;
-                }
+                        .ham-menu span:nth-child(1) {
+                        top: 25%;
+                        }
 
-            /* Button in de desktop versie verbergen */
-            .icoontjes button {
-            display: none;
-            }
+                        .ham-menu span:nth-child(3) {
+                        top: 75%;
+                        }
 
-        /* Dit is het scherm dat verschijnt als je op de hamburger menu drukt         */
-        /* .off-screen-menu {
-            max-width: 402px;
-            background-color: #1d194e;
-            color: #FEB51E;
-            width: 100%;
-            max-width: 300px;
-            height: 500px;
-            position: fixed;
-            top: 0;
-            right: -350px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: left;
-            font-size: 20px;
-            transition: 1s ease;
-        } */
-        
-        /* Dit is voor de onderwerpen in de menu */
-          /*   ul {
-            list-style: none;
-            } */
 
-   
+/* MAIN */
 
-/* Dit is de main */
-
-    /* Dit is voor het stukje met de pagina's */
+    /* Dit is voor het stukje met de pagina's bovenaan */
     .paginas {
         margin-top: 40px;
         font-size: 14px;
@@ -132,31 +109,31 @@ header {
         text-decoration: none;
     }
 
-    /* Voor de huidige pagina waar je op kijkt*/
-    .pageactive {
-        color:#1D194E;
-        font-weight: bold;
-    }
+        /* Voor de huidige pagina waar je op kijkt */
+        .pageactive {
+            color:#1D194E;
+            font-weight: bold;
+        }
 
-    /* Dit is voor de tekst home, want die is een link met een hover */
-        .paginas a {
-            color: #A3A2B7;
-            text-decoration: none;
-            }   
-    
-            .paginas a:visited {
+            /* Dit is voor de tekst home, want die is een link met een hover */
+            .paginas a {
                 color: #A3A2B7;
                 text-decoration: none;
-            }
+                }   
+        
+                .paginas a:visited {
+                    color: #A3A2B7;
+                    text-decoration: none;
+                }
 
-            .paginas a:hover {
-                color: #A3A2B7;
-                text-decoration: underline;
-                text-decoration-color: #A3A2B7;
-                text-underline-offset: 1px;
-            }
+                .paginas a:hover {
+                    color: #A3A2B7;
+                    text-decoration: underline;
+                    text-decoration-color: #A3A2B7;
+                    text-underline-offset: 1px;
+                }
 
-    /* Dit is de titel van de pagina */
+    /*  De titel van de pagina */
     h1 { 
         margin-top: 40px;
     }
@@ -173,36 +150,35 @@ header {
     }
 
         /* Voor de search icon */
-            .material-symbols-outlined {
+        .material-symbols-outlined {
             font-variation-settings:
             'FILL' 0,
             'wght' 400,
             'GRAD' 0,
             'opsz' 24
-            }
+        }
+
+        /* Dit is de zoekbalk */
+        .search-input {
+            font-size: 16px;
+            outline: none;
+            border: none;
+            flex-grow:1;
+        }
         
-        /* Voor de kleur van de zoekbalk tekst en icon */
+            /* Voor de kleur van de zoekbalk tekst en search icon */
             .search-input::placeholder,
             .material-symbols-outlined {
-            color: #D1D0DB;
-            }
-        
-            /* Dit is de zoekbalk */
-            .search-input {
-                font-size: 15px;
-                outline: none;
-                border: none;
-                flex:1;
-                width: 210px;
+                color: #D1D0DB;
             }
 
-            /* Dit is de foto search icon foto */
-            .search .fotosearch {
-                width: auto;
-                height: 25px;
-            }
+        /* Dit is de foto search icon foto */
+        .search .fotosearch {
+            width: auto;
+            height: 25px;
+        }
 
-    /* Dit zijn de tekenmethodes/categorieen blok */
+    /* Dit zijn de tekenmethodes/categorieen filter container */
     .methodes {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -234,62 +210,62 @@ header {
         justify-items: center;
         }
 
-        /* Dit is de tekst bij de categorie */
-        .categorie0 span {
-            color: #1D194E;
-        }
+            /* Dit is de tekst bij de categorie */
+            .categorie0 span {
+                color: #1D194E;
+            }
 
-        /* Dit is de foto bij de categorie */
+            /* Dit is de foto bij de categorie */
             .categorie0 img {
-            height: 70px;
-            width: auto;
-            opacity: 20%;
+                height: 70px;
+                width: auto;
+                opacity: 20%;
             }
 
-            /* Dit is de styling voor de tekst underline van alle methodes */
-            .categorie1 {
-                text-decoration: underline;
-                text-decoration-color:#4FBBC2;
-                text-decoration-thickness: 1.5px;
-            }
+                /* Dit is de styling voor de tekst underline van alle tekenmethodes */
+                .categorie1 {
+                    text-decoration: underline;
+                    text-decoration-color:#4FBBC2;
+                    text-decoration-thickness: 1.5px;
+                }
 
-            .categorie2 {
+                .categorie2 {
                     text-decoration: underline;
                     text-decoration-color:#F96C4F;
                     text-decoration-thickness: 1.5px;
                 }
 
-            .categorie3 {
+                .categorie3 {
                     text-decoration: underline;
                     text-decoration-color:#B48EBA;
                     text-decoration-thickness:1.5px;
                 }
 
-            .categorie4 {
+                .categorie4 {
                     text-decoration: underline;
                     text-decoration-color:#B0B64C;
                     text-decoration-thickness: 1.5px;
                 }
 
-            .categorie5 {
+                .categorie5 {
                     text-decoration: underline;
                     text-decoration-color:#BD364E ;
                     text-decoration-thickness: 1.5px;
                 }
 
-            .categorie6 {
+                .categorie6 {
                     text-decoration: underline;
                     text-decoration-color:#2F739B;
                     text-decoration-thickness: 1.5px;
                 }
 
 
-    /* Dit is blokje voor de methode  */
+    /* Dit is blok voor de tekenmethode  */
     .categorieblok {
         margin-top: 50px;
     }    
 
-        /* Dit zijn de titels van de methodes blokje */
+        /* Dit is voor de titels van de methodes blok */
             .categorietitel1 {
             background-color: #4FBBC2;
             color: #F3F3F6;
@@ -314,7 +290,7 @@ header {
             justify-content: center;   
         }
 
-        /* In dit staat het overzicht van categorieen met alle info over de methodes ofzo */
+        /* In dit staat het overzicht van categorieen met info over de methodes ofzo en de tekst */
         .categoriedeel {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -370,94 +346,70 @@ header {
         list-style: none;
     }
 
-    /* Dit is voor de link dat je naar een andere pagina kan */
-    .paginanummer a {
-        text-decoration: none;
-        color: #A3A2B7;
-    }
-
-        .paginanummer a:visited {
-            color: #A3A2B7;
+        /* Dit is voor de link dat je naar een andere pagina kan */
+        .paginanummer a {
             text-decoration: none;
-        }
-
-        .paginanummer a:hover {
             color: #A3A2B7;
-            text-decoration: underline;
-            text-decoration-color: #A3A2B7;
-            text-underline-offset: 1px;
         }
 
-        /* Styling voor de active pagina waar je nu op zit */
-        .paginanummer .activepage {
-            color:#1D194E;
+            .paginanummer a:visited {
+                color: #A3A2B7;
+                text-decoration: none;
             }
             
 
-/* Dit is de footer */
-footer {
-    background-color: #1D194E;
-    position: absolute;
-    left: 0;
-    margin-top: 80px;
-}
+            .paginanummer a:hover {
+                color: #A3A2B7;
+                text-decoration: underline;
+                text-decoration-color: #A3A2B7;
+                text-underline-offset: 1px;
+            }
 
-    /* Hierin staat alle content van de footer */
-    .footercontent {
-        padding-top: 80px;
-        padding-bottom: 80px;
+                /* Voor de active pagina waar je nu op zit */
+                .paginanummer .activepage {
+                    color:#1D194E;
+                }
+            
 
+/* FOOTER */
+
+    footer {
+        background-color: #1D194E;
+        position: absolute;
+        left: 0;
+        margin-top: 80px;
     }
 
-        /* De bovenkant content van de footer dus logo en social icons */
-        .footerheader {
-            justify-content: center;
-            display: grid;
-            row-gap: 10px;
+        /* Hierin staat alle content van de footer */
+        .footercontent {
+            padding-top: 80px;
+            padding-bottom: 50px;
         }
 
-            /* Dit is het logo in footer */
-            footer .logo {
-                width: 160px;            
+            /* De bovenkant content van de footer - logo en social icons */
+            .footerheader {
+                justify-content: center;
+                display: grid;
+                row-gap: 10px;
             }
 
-            /* De social icons */
-            footer .socialicons {
-                margin-top: 20px;
-                display: flex;
-                gap: 15px;
-            }
+                /* Dit is het logo in footer */
+                footer .logo {
+                    width: 160px;            
+                }
 
-            /* Foto van de social icons */
-            footer .socialicons img {
-                width:45px;
-                height: 45px;
-            }
+                /* De social icons */
+                footer .socialicons {
+                    margin-top: 20px;
+                    display: flex;
+                    gap: 15px;
+                }
 
-
-    /* De menu in de footer van desktop */        
-    .menufooterdesktop {
-        display: none;
-    }
-
-    /* Het menu in de footer         */
-    .menufooter {
-    display: flex;
-    flex-direction: column;
-    justify-content:start;
-    max-width: 320px;
-    margin: 70px auto;
-    box-sizing: border-box;
-    gap: 30px;
-    }
-
-        /* Het menu naar de pagina's in een summary */
-        .menufooter summary {
-        color: #FEB51E;
-        font-size: 23px;
-        font-weight: bold;
-        list-style: none;
-        }
+                    /* Foto van de social icons */
+                    footer .socialicons img {
+                        width:45px;
+                        height: 45px;
+                    }
 
         /* Dit zorgt ervoor dat 1 summary geen marker heeft */
         summary.geen-pijl:after {
@@ -468,20 +420,27 @@ footer {
         summary:after {
         content: "❯";
         position: absolute;
-        right: 45px;
-        }
+            /* De menu in de footer van desktop */        
 
-        /* Dit is voor de tekst in de details */
-        .menufooter details {
-        font-size: 16px;
-        color: #F3F3F6;
-        }
+            /* Het menu in de footer op mobile       */
+            .menufooter {
+                display: flex;
+                flex-direction: column;
+                max-width: 320px;
+                margin: 70px auto;
+                box-sizing: border-box;
+                gap: 30px;
+            }
 
-        /* De link in de details die naar een pagina gaat */
-        .menufooter a, a:visited {
-        color: #F3F3F6;
-        text-decoration: none;
-        }
+                /* Het menu in een summary */
+                .menufooter summary {
+                    color: #FEB51E;
+                    font-size: 23px;
+                    font-weight: bold;
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+                }
 
         .menufooter a:hover {
         color: #D1D0DB;
@@ -499,10 +458,10 @@ footer {
         color: #F3F3F6;
     }
 
-    /* Dit is voor de copyright tekst */
-    .footerend p {
-        white-space: pre-line;
-    }   
+                /* Dit is voor de copyright tekst */
+                .footerend p {
+                    white-space: pre-line;
+                }   
 
         /* Voor de onderste 3 stukjes tekst */
         .footerend ul {

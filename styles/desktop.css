@@ -1,16 +1,9 @@
 /* DESKTOP */
 
-@media (min-width: 1000px){
+@media (min-width: 1024px){
 
-    /* Dit is voor de hele pagina */
-    body {
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding:10px;
-    max-width: 1200px;
-    }
+   /* HEADER */
 
-    /* Dit is de header vlak */
     header { 
         margin-left: -170px;
         margin-right: -170px;
@@ -19,7 +12,7 @@
         box-sizing: border-box;
     }
 
-        /* Linkerkant van de header met logo en navigatie */
+        /* Linkerkant van de header met logo en navigatiemenu op desktop */
         .leftheader {
             margin-left: 170px;
             display: flex;
@@ -39,12 +32,12 @@
             margin-right: 170px;
         }
 
-            /* Foto van de icoontjes */
-            .icoontjes img {
-            display: block;
-            width: 30px;
-            height: 30px;
-            }
+                /* Foto van de icoontjes */
+                .icoontjes img {
+                display: block;
+                width: 25px;
+                height: 25px;
+                }
 
             /* De button in de icoontjes */
             .icoontjes button {
@@ -56,68 +49,49 @@
                 display: block;
             }
 
-            /* Navigatie in desktop */
-                .navdesktop {
-                    display: flex;
-                    align-items: center;
+                .icoontjes button:hover, 
+                .icoontjes a:hover {
+                    background-color: #f8bf4e;
+                    text-decoration: none;
                 }
-
-                    .navdesktop ul {
-                        display: flex;
-                        list-style: none;
-                        gap: 50px;
-                    }
 
     /* Hamburger menu van mobile verbergen */
     .ham-menu {
         display: none;
     }
 
+/* MAIN */
+
     /* Dit is voor het stukje met de pagina's */
     .paginas {
         margin-top: 90px;
-        font-size: 14px;
-        color: #A3A2B7;
-        text-decoration: none;
     }
 
-    /* Dit is de zoekbalk */
-    .search-input {
-        font-size: 15px;
-        outline: none;
-        border: none;
-        flex:1;
-        width: 1090px;
-    }
-
-    /* Dit zijn de tekenmethodes/categorieen blok */
+    /* Dit zijn de tekenmethodes/categorieen filter container */
      .methodes {
     display: flex;
     margin-top: 30px;
     column-gap: 50px;
     }
 
-    /* Dit is blokje voor de methode  */
-    .categorieblok {
-        margin-top: 50px;
-    }    
-
-        /* Dit zijn de titels van de methodes blokje */
-            .categorietitel1 {
-            justify-content: flex-start;   
-            padding-left: 10px;
+        .methodes a:hover {
+            background-color: transparent;
         }
 
-        .categorietitel2 { 
-            justify-content: flex-start;   
-            padding-left: 10px;
-        }
+    /* Dit zijn de titels van de methodes blok */
+        .categorietitel1 {
+        justify-content: flex-start;   
+        padding-left: 10px;
+    }
 
-        /* In dit staat het overzicht van categorieen met alle info over de methodes ofzo */
+    .categorietitel2 { 
+        justify-content: flex-start;   
+        padding-left: 10px;
+    }
+
+        /* In dit staat het overzicht van categorieen met info over de methodes ofzo en de tekst */
         .categoriedeel {
-            display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            column-gap: 10px;
         }
 
             /* Foto in de article */
@@ -125,14 +99,9 @@
                 width: 285px;
                 }
 
-                 /* De tekst in de artikel */
-                .categoriedeel article h3 {
+            /* De tekst in de artikel */
+            .categoriedeel article h3 {
                 font-size: 20px;
-                }
-
-            /* Dit is om 2 onderdelen in het deel over 2 kolommen te doen    */
-            .categoriedeel article:nth-of-type(7) {
-                grid-column: 3 / -1;
             }
 
             .categoriedeel article:nth-of-type(10) {
@@ -150,7 +119,8 @@
         margin-top: 60px;
     }
 
-    /* Dit is de footer */
+/* FOOTER */
+
     footer {
     position: absolute;
     left: 0;
@@ -158,7 +128,7 @@
     width: 100%;
     }
 
-        /* De bovenkant content van de footer dus logo en social icons */
+        /* De bovenkant content van de footer - logo en social icons */
         .footerheader {
             row-gap: 10px;
             position: absolute;
@@ -188,34 +158,29 @@
                 color: #F3F3F6;
             }
 
-            /* De link in de details die naar een pagina gaat */
-            .menufooterdesktop a, a:visited {
-            color: #F3F3F6;
-            text-decoration: none;
-            }
+                /* De link in de details die naar een pagina gaat */
+                .menufooterdesktop a, a:visited {
+                color: #F3F3F6;
+                text-decoration: none;
+                }
 
-            .menufooterdesktop a:hover {
-            color: #D1D0DB;
-            text-decoration: underline;
-            }
+                .menufooterdesktop a:hover {
+                color: #D1D0DB;
+                text-decoration: underline;
+                }
 
-    /* Het onderste content gedeelte van de footer */
-    .footerend {
-        gap: 170px;
-        margin-top: 350px;
-    }
-
-    /* Dit is voor de copyright tekst */
-    .footerend p {
-        white-space: normal;
-    }   
-
-        /* Voor de onderste 3 stukjes tekst */
-        .footerend ul {
-            gap: 80px;
-
+        /* Het onderste content gedeelte van de footer */
+        .footerend {
+            padding: 0 200px;
+            gap: 170px;
+            margin-top: 350px;
+            display: flex;
+            justify-content: space-between;
         }
 
-
+            /* Dit is voor de copyright tekst */
+            .footerend p {
+                white-space: normal;
+            }   
         
 }
