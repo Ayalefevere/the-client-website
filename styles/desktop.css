@@ -9,24 +9,43 @@
         margin-right: -170px;
         height: 100px;
         border-bottom: 1px solid #D1D0DB;
-        box-sizing: border-box;
     }
 
         /* Linkerkant van de header met logo en navigatiemenu op desktop */
         .leftheader {
             margin-left: 170px;
             display: flex;
+            gap: 30px;
         }
 
             /* Dit is het logo  */
-            img { 
+            header img { 
                 height: auto;
-                width: 80px;
+                width: 70px;
             }
+
+                /* Navigatiemenu in desktop */
+                .navdesktop {
+                    display: flex;
+                    align-items: center;
+                   gap: 20px;
+                }
+
+                    /* Styling van de button in navigatiemenu */
+                    .navdesktop button {
+                        background-color: transparent;
+                        border: none;
+                        display: flex;
+                        gap: 10px;
+                        font-size: 16px;
+                    }    
+
+                        button:hover {
+                            text-decoration: underline;
+                        }
 
         /* Dit zijn de icoontjes en button  */
         .icoontjes {
-            display: flex;
             align-items: center;
             gap: 30px;
             margin-right: 170px;
@@ -43,10 +62,12 @@
             .icoontjes button {
                 background-color: #FEB51E;
                 color: #1D194E;
-                width: 195px;
-                height: 50px;
-                font-size: 15px;
+                width: 180px;
+                height: 45px;
+                font-size: 14px;
                 display: block;
+                border: transparent;
+                box-shadow: 1px 1px 2px black;
             }
 
                 .icoontjes button:hover, 
