@@ -364,7 +364,6 @@ header {
                 color: #A3A2B7;
                 text-decoration: none;
             }
-            
 
             .paginanummer a:hover {
                 color: #A3A2B7;
@@ -419,16 +418,11 @@ header {
                         height: 45px;
                     }
 
-        /* Dit zorgt ervoor dat 1 summary geen marker heeft */
-        summary.geen-pijl:after {
-        content: none;
-        }
 
-        /* Dit zorgt dat de marker na de tekst komt */
-        summary:after {
-        content: "❯";
-        position: absolute;
             /* De menu in de footer van desktop */        
+            .menufooterdesktop {
+                display: none;
+            }
 
             /* Het menu in de footer op mobile       */
             .menufooter {
@@ -450,32 +444,50 @@ header {
                     justify-content: space-between;
                 }
 
-        .menufooter a:hover {
-        color: #D1D0DB;
-        text-decoration: underline;
-        }
+                    /* Dit is voor het icoontje naast de summary */
+                    .menufooter summary svg {
+                        fill: #FEB51E;
+                        width: 25px;
+                        height: auto;
+                    }
 
-        
-    /* Het onderste content gedeelte van de footer */
-    .footerend {
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 70px;
-        text-align: center;
-        color: #F3F3F6;
-    }
+                /* Dit is voor de tekst in de details */
+                .menufooter details {
+                font-size: 16px;
+                color: #F3F3F6;
+                }
+
+                    /* De link in de details die naar een pagina gaat */
+                    .menufooter a, a:visited {
+                    color: #F3F3F6;
+                    text-decoration: none;
+                    }
+
+                        .menufooter a:hover {
+                        color: #D1D0DB;
+                        text-decoration: underline;
+                        }
+
+                
+            /* Het onderste content gedeelte van de footer */
+            .footerend {
+                display:flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 70px;
+                text-align: center;
+                color: #F3F3F6;
+            }
 
                 /* Dit is voor de copyright tekst */
                 .footerend p {
                     white-space: pre-line;
                 }   
 
-        /* Voor de onderste 3 stukjes tekst */
-        .footerend ul {
-            display: flex;
-            gap: 50px;
-            list-style: none;
-        }
+                /* Voor de onderste 3 stukjes tekst */
+                .ondermenu {
+                    display: flex;
+                    gap:50px;
+                }
 
 
