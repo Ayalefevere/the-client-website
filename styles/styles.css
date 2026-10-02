@@ -203,17 +203,17 @@ header {
             justify-items: center;
         }
 
-        /* Dit is voor de filter icon foto */
-        .categorie img {
-            height: 70px;
-            width: auto;
-        }
-
         /* Dit is voor de filter icon  */
         .categorie {
             display: flex;
             justify-content: center;
         }
+
+            /* Dit is voor de filter icon foto */
+            .categorie img {
+                height: 70px;
+                width: auto;
+            }
 
         /* Dit is voor de categorieen/methodes met foto en tekst */
         .categorie0 {
