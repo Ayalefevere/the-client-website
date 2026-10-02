@@ -20,11 +20,20 @@
 
 /* Dit is voor de hele pagina voor alle devices */
 body {
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding:10px;
-  max-width: 320px;
-  font-family: "rigid-square", sans-serif;
+margin: 0 auto;
+padding:10px 0px 0px 0px;
+max-width: 80%;
+font-family: "rigid-square", sans-serif;
+font-size: 16px;
+line-height: 1.4;
+
+    @media (min-width: 768px){
+        max-width:90%;
+    }
+
+        @media (min-width: 1024px){
+            max-width: 80%;
+        }
 }
 
 /* HEADER */
