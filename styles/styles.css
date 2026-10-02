@@ -149,7 +149,7 @@ header {
     /* Dit is voor de hele search balk */
     .search {
         margin-top: 40px;
-        width: max-content;
+        width: 100%;
         display: flex;
         align-items: center;
         padding: 10px;
@@ -191,7 +191,7 @@ header {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         margin-top: 30px;
-        column-gap: 10px;
+        column-gap: 20px;
         row-gap: 20px;
     }
 
@@ -205,17 +205,23 @@ header {
 
         /* Dit is voor de filter icon foto */
         .categorie img {
-        height: 70px;
-        width: auto;
+            height: 70px;
+            width: auto;
+        }
+
+        /* Dit is voor de filter icon  */
+        .categorie {
+            display: flex;
+            justify-content: center;
         }
 
         /* Dit is voor de categorieen/methodes met foto en tekst */
         .categorie0 {
-        display: flex;
-        flex-direction: row;
-        width: 90px;
-        height: 120px;
-        justify-items: center;
+            display: flex;
+            flex-direction: row;
+            width: 90px;
+            height: auto;
+            justify-content: center;
         }
 
             /* Dit is de tekst bij de categorie */
@@ -277,7 +283,7 @@ header {
             .categorietitel1 {
             background-color: #4FBBC2;
             color: #F3F3F6;
-            font-size: 15px;
+            font-size: 16px;
             height: 40px;
             margin-bottom: 20px;
 
@@ -289,7 +295,7 @@ header {
         .categorietitel2 {
             background-color: #F96C4F;
             color: #F3F3F6;
-            font-size: 15px;
+            font-size: 16px;
             height: 40px;
             margin-bottom: 20px;
             
@@ -312,12 +318,12 @@ header {
 
                 /* Foto in de article */
                 .categoriedeel img {
-                width: 145px;
+                width: 155px;
                 }
 
                 /* De tekst in de artikel */
                 .categoriedeel article h3 {
-                font-size: 11px;
+                font-size: 12px;
                 margin-top: 0px;
                 margin-bottom: 5px;
                 font-weight: bold;
@@ -325,21 +331,29 @@ header {
                 }
 
             /* Dit is om 2 onderdelen in het deel over 2 kolommen te doen    */
-            .categoriedeel article:nth-of-type(7) {
+            .categoriedeel article:nth-of-type(1) {
                 grid-column: 1 / -1;
             }
 
-            .categoriedeel article:nth-of-type(7) img {
-                width: 100%;
-            }
-
-            .categoriedeel article:nth-of-type(10) {
+                .categoriedeel article:nth-of-type(1) img {
+                    width: 100%;
+                }
+            
+            .categoriedeel article:nth-of-type(8) {
                 grid-column: 1 / -1;
             }
 
-            .categoriedeel article:nth-of-type(10) img {
+                .categoriedeel article:nth-of-type(8) img {
                 width: 100%;
+                }
+
+            .categoriedeel article:nth-of-type(11) {
+                    grid-column: 1 / -1;
             }
+
+                .categoriedeel article:nth-of-type(11) img {
+                    width: 100%;
+                }
 
     /* Dit is de paginanummering zodat je naar meer methodes kan switchen        */
     .paginanummer ul {
@@ -347,7 +361,7 @@ header {
         justify-content: center;
         gap: 20px;
         color: #A3A2B7;
-        font-size: 11px;
+        font-size: 14px;
         padding: 0;
         margin-top: 40px;
         width: 100%;
