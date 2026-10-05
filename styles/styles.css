@@ -6,13 +6,12 @@
 }
 
 /* IN DE HOME PAGINA */
-    /* Voor de link tekst in de home. Het gaat weg */
-    .home a {
-    color: grey;
-    }
+    /* Voor de link in de home. Het gaat weg */
+    .home {
+    color: red;
 
-        .home a:visited {
-        color: grey;
+        a:visited {
+        color: red;
         }
     }
 
