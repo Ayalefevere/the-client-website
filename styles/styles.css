@@ -14,8 +14,9 @@
         .home a:visited {
         color: grey;
         }
+    }
 
-        
+     
 /* TEKENMETHODES PAGINA */
 
 /* Dit is voor de hele pagina voor alle devices */
@@ -42,70 +43,73 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
 
     /* Dit is het logo in de header */
-    header img { 
-        height: auto;
-        width: 53px;
-    }
+        img { 
+            height: auto;
+            width: 53px;
+        }
 
     /* Navigatiemenu van desktop verbergen */
     .navdesktop {
         display: none;
     }
 
-     /* Dit is icon search en hamburger menu */
+    /* Dit is icon search en hamburger menu */
     .icoontjes {
         display: flex;
         justify-content: end;
         align-items: center;
         gap: 20px;
-    }
+    
 
         /* Icon search is zichtbaar op mobile */
-        .icoontjes .searchicon {
+        .searchicon {
         display: block;
         height: 30px;
         width: 30px;
         }
 
         /* Zorgt ervoor dat de icoontjes verborgen staan op mobile die in desktop versie staan */
-        .icoontjes img {
+        img {
             display: none;
         }
 
         /* Button in de desktop versie verbergen */
-        .icoontjes button {
+        button {
         display: none;
         }
+    }
+   
+    /* Dit is de hamburger menu op mobile  */
+    .ham-menu {
+        height: 40px;
+        width: 40px;
+        position: relative;
 
-        /* Dit is de hamburger menu op mobile  */
-        .ham-menu {
-            height: 40px;
-            width: 40px;
-            position: relative;
+        /* Dit zijn de streepje in de hamburger menu */
+        span {
+            height: 4px;
+            width: 100%;
+            background-color: #1d194e;
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%, -50%);
         }
 
-            /* Dit zijn de streepje in de hamburger menu */
-                .ham-menu span {
-                    height: 4px;
-                    width: 100%;
-                    background-color: #1d194e;
-                    position: absolute;
-                    top: 50%;
-                    left:50%;
-                    transform: translate(-50%, -50%);
-                }
+            span:nth-child(1) {
+                top: 25%;
+            }
 
-                        .ham-menu span:nth-child(1) {
-                        top: 25%;
-                        }
+            span:nth-child(3) {
+                top: 75%;
+            }       
+    }
+}
 
-                        .ham-menu span:nth-child(3) {
-                        top: 75%;
-                        }
 
+    
 
 /* MAIN */
 
@@ -115,7 +119,6 @@ header {
         font-size: 14px;
         color: #A3A2B7;
         text-decoration: none;
-    }
 
         /* Voor de huidige pagina waar je op kijkt */
         .pageactive {
@@ -123,23 +126,27 @@ header {
             font-weight: bold;
         }
 
-            /* Dit is voor de tekst home, want die is een link met een hover */
-            .paginas a {
+    }
+
+        
+
+        /* Dit is voor de tekst home, want die is een link met een hover */
+        .paginas a {
+            color: #A3A2B7;
+            text-decoration: none;
+            }   
+    
+            .paginas a:visited {
                 color: #A3A2B7;
                 text-decoration: none;
-                }   
-        
-                .paginas a:visited {
-                    color: #A3A2B7;
-                    text-decoration: none;
-                }
+            }
 
-                .paginas a:hover {
-                    color: #A3A2B7;
-                    text-decoration: underline;
-                    text-decoration-color: #A3A2B7;
-                    text-underline-offset: 1px;
-                }
+            .paginas a:hover {
+                color: #A3A2B7;
+                text-decoration: underline;
+                text-decoration-color: #A3A2B7;
+                text-underline-offset: 1px;
+            }
 
     /*  De titel van de pagina */
     h1 { 
@@ -193,27 +200,18 @@ header {
         margin-top: 30px;
         column-gap: 20px;
         row-gap: 20px;
-    }
-
-        /* Dit is voor de link van de methodes */
-        .methodes a, a:visited {
-            text-decoration: none;
-            font-size: 13px;
-            text-align: center;
-            justify-items: center;
-        }
 
         /* Dit is voor de filter icon  */
         .categorie {
             display: flex;
             justify-content: center;
-        }
 
             /* Dit is voor de filter icon foto */
-            .categorie img {
+            img {
                 height: 70px;
                 width: auto;
             }
+        }
 
         /* Dit is voor de categorieen/methodes met foto en tekst */
         .categorie0 {
@@ -222,58 +220,69 @@ header {
             width: 90px;
             height: auto;
             justify-content: center;
-        }
 
             /* Dit is de tekst bij de categorie */
-            .categorie0 span {
+            span {
                 color: #1D194E;
             }
 
-            /* Dit is de foto bij de categorie */
-            .categorie0 img {
+             /* Dit is de foto bij de categorie */
+            img {
                 height: 70px;
                 width: auto;
                 opacity: 20%;
             }
+        }
 
-                /* Dit is de styling voor de tekst underline van alle tekenmethodes */
-                .categorie1 {
-                    text-decoration: underline;
-                    text-decoration-color:#4FBBC2;
-                    text-decoration-thickness: 1.5px;
-                }
+        /* Dit is de styling voor de tekst underline van alle tekenmethodes */
+        .categorie1 {
+            text-decoration: underline;
+            text-decoration-color:#4FBBC2;
+            text-decoration-thickness: 1.5px;
+        }
 
-                .categorie2 {
-                    text-decoration: underline;
-                    text-decoration-color:#F96C4F;
-                    text-decoration-thickness: 1.5px;
-                }
+        .categorie2 {
+            text-decoration: underline;
+            text-decoration-color:#F96C4F;
+            text-decoration-thickness: 1.5px;
+        }
 
-                .categorie3 {
-                    text-decoration: underline;
-                    text-decoration-color:#B48EBA;
-                    text-decoration-thickness:1.5px;
-                }
+        .categorie3 {
+            text-decoration: underline;
+            text-decoration-color:#B48EBA;
+            text-decoration-thickness:1.5px;
+        }
 
-                .categorie4 {
-                    text-decoration: underline;
-                    text-decoration-color:#B0B64C;
-                    text-decoration-thickness: 1.5px;
-                }
+        .categorie4 {
+            text-decoration: underline;
+            text-decoration-color:#B0B64C;
+            text-decoration-thickness: 1.5px;
+        }
 
-                .categorie5 {
-                    text-decoration: underline;
-                    text-decoration-color:#BD364E ;
-                    text-decoration-thickness: 1.5px;
-                }
+        .categorie5 {
+            text-decoration: underline;
+            text-decoration-color:#BD364E ;
+            text-decoration-thickness: 1.5px;
+        }
 
-                .categorie6 {
-                    text-decoration: underline;
-                    text-decoration-color:#2F739B;
-                    text-decoration-thickness: 1.5px;
-                }
+        .categorie6 {
+            text-decoration: underline;
+            text-decoration-color:#2F739B;
+            text-decoration-thickness: 1.5px;
+        }
 
 
+        /* Dit is voor de link van de methodes */
+        a, a:visited {
+            text-decoration: none;
+            font-size: 13px;
+            text-align: center;
+            justify-items: center;
+        }
+
+    }
+
+        
     /* Dit is blok voor de tekenmethode  */
     .categorieblok {
         margin-top: 50px;
