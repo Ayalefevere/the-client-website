@@ -118,7 +118,7 @@
 
             /* Foto in de article */
             .categoriedeel img {
-                width: 295px;
+                width: 100%;
             }
 
             /* De tekst in de artikel */

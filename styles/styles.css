@@ -43,7 +43,7 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    /* Dit is het logo in de header */
+        /* Dit is het logo foto in de header */
         img { 
             height: auto;
             width: 53px;
@@ -326,7 +326,7 @@ header {
 
                 /* Foto in de article */
                 .categoriedeel img {
-                width: 155px;
+                width: 100%;
                 }
 
                 /* De tekst in de artikel */
