@@ -140,7 +140,8 @@ header {
                 font-size: 14px;
                 display: block;
                 border: transparent;
-                box-shadow: 1px 1px 2px black;
+                box-shadow: 1px 1px 3px black; 
+                
             }
         }
 
@@ -149,6 +150,8 @@ header {
             a:hover {
                 background-color: #f8bf4e;
                 text-decoration: none;
+                transform: translateY(-2px); 
+                transition: transform 0.2s ease;
                 }  
             } 
     }
@@ -258,7 +261,7 @@ header {
                 }
 
             /* Dit is de foto search icon foto */
-            .search .fotosearch {
+            .fotosearch {
                 width: auto;
                 height: 25px;
                 color: #D1D0DB;
@@ -271,15 +274,13 @@ header {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         margin-top: 30px;
-        column-gap: 20px;
-        row-gap: 20px;
+        gap: 20px;
 
             @media (min-width: 768px){
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
                 margin-top: 30px;
-                column-gap: 10px;
-                row-gap: 20px;
+                gap: 20px;
             }
 
 
@@ -369,6 +370,10 @@ header {
             text-align: center;
             justify-items: center;
         }
+
+            a:hover {
+                border: 1px solid #feb31eb6;
+            }
     }
 
         
@@ -435,7 +440,7 @@ header {
                     }
 
                     @media (min-width: 1024px){
-                        font-size: 20px;
+                        font-size: 16px;
                     }
                 }
             }
@@ -450,7 +455,7 @@ header {
                 height: auto;
 
                 @media (min-width: 1024px){
-                    height: 88%;
+                    height: 90%;
                 }
             }
             
@@ -467,7 +472,7 @@ header {
                 height: auto;
 
                     @media (min-width: 1024px){
-                    height: 94%;
+                    height: 95%;
                     }
             }
 
@@ -585,6 +590,7 @@ header {
             margin: 70px auto;
             box-sizing: border-box;
             gap: 30px;
+            cursor: pointer;
 
                 @media (min-width: 1024px){
                     display: none;
