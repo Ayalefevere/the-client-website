@@ -236,7 +236,8 @@ header {
             .searchicon2 {
                 width: auto;
                 height: 25px;
-                fill: #D1D0DB;
+                color: #D1D0DB;
+                fill: currentColor;
             }
 
                 /* Voor de kleur van de zoekbalk tekst en search icon */
@@ -617,7 +618,8 @@ header {
 
                 /* Dit is voor het icoontje naast de summary */
                 svg {
-                    fill: #FEB51E;
+                    color: #FEB51E;
+                    fill: currentColor;
                     width: 25px;
                     height: auto;
                 }
