@@ -17,7 +17,7 @@ De opdracht is om een website te ontwerpen en te maken voor een opdrachtgever. D
 
 Hier staat de website: https://ayalefevere.github.io/the-client-website/
 
-=======
+
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
