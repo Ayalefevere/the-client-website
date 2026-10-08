@@ -25,8 +25,18 @@ Hier staat de website: https://ayalefevere.github.io/the-client-website/
 
 Dit is het nieuwe design voor de website van Visual Thinking. Op de website kunnen studenten en docenten leren om hun gedachten en doelen te verbeelden. De website bestaat (op dit moment) uit 2 pagina's: home en tekenmethodes. De home pagina hoeft op dit moment niet uitgewerkt worden. Alle pagina's hebben een header en footer. Op de tekenmethodes pagina kun je filteren op de tekenmethodes en daar kun je de categorieeën bekijken die daar bij horen. Bij de tekenmethode detail pagina zoals Roadmap kun je stappanplan volgen om meer te leren. De website is responsive voor mobile, tablet en desktop.
 
-<img width="1901" height="857" alt="tekenmethodes pagina - mobile" src="assets/tekenmethodes_mobile.png"/>
-<img width="1901" height="857" alt="tekenmethodes pagina - desktop" src="assets/tekenmethodes_desktop.png"/>
+**Mobile**
+<img width="502" height="747" alt="Tekenmethodes pagina - mobile (1)" src="https://github.com/user-attachments/assets/6688504b-1b08-44f7-936a-4cb566dc3477" />
+<img width="498" height="738" alt="Tekenmethodes pagina - mobile (2)" src="https://github.com/user-attachments/assets/4cdd2ee5-1a1a-4cf3-a332-ffec37f1700f" />
+<img width="502" height="740" alt="Tekenmethodes pagina - mobile (3)" src="https://github.com/user-attachments/assets/eb617b1e-a034-41d0-9630-7d4fa861ab61" />
+
+**Desktop**
+
+<img width="1897" height="845" alt="Tekenmethodes pagina - desktop  (1)" src="https://github.com/user-attachments/assets/bc2165b1-1c64-4dd4-af6a-328c1815db1e" />
+<img width="1897" height="838" alt="Tekenmethodes pagina - desktop  (2)" src="https://github.com/user-attachments/assets/620bd5a4-cbc8-4158-b7f0-a315daa8ab8c" />
+<img width="1896" height="847" alt="Tekenmethodes pagina - desktop  (3)" src="https://github.com/user-attachments/assets/7a6bed82-2fe5-48e4-ae04-fa984264ae5c" />
+<img width="1897" height="845" alt="Tekenmethodes pagina - desktop  (4)" src="https://github.com/user-attachments/assets/6924ac8e-5b51-4da5-92c6-9f0d3db43b96" />
+
 
 
 Hier staat de website: https://ayalefevere.github.io/the-client-website/
