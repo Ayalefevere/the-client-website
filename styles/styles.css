@@ -316,6 +316,11 @@ header {
             img {
                 height: 70px;
                 width: auto;
+
+                @media (min-width: 1024px){
+                height: 80px;
+                width: auto;
+                }
             }
         }
 
@@ -363,11 +368,12 @@ header {
             font-size: 13px;
             text-align: center;
             justify-items: center;
-        }
+            }
 
             a:hover {
                 border: 0.5px solid #feb31eb6;
             }
+           
     }
 
         
