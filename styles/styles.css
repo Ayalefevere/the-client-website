@@ -219,7 +219,7 @@ header {
         width: 100%;
         display: flex;
         align-items: center;
-        padding: 11px 10px 10px 10px;
+        padding: 15px;
         border: 1px solid #D1D0DB;
         gap:10px;
 
@@ -234,21 +234,21 @@ header {
             /* Voor de search icon */
             .searchicon2 {
                 width: auto;
-                height: 25px;
+                height: 20px;
                 color: #D1D0DB;
                 fill: currentColor;
             }
 
                 /* Voor de kleur van de zoekbalk tekst en search icon */
                 .search-input::placeholder {
-                    color: #D1D0DB;
+                    color: #A3A2B7;
                 }
 
             /* Dit is de foto search icon foto */
             .fotosearch {
                 width: auto;
-                height: 25px;
-                color: #D1D0DB;
+                height: 22px;
+                color: #A3A2B7;
             }
     }
 
