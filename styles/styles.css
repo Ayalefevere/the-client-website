@@ -263,15 +263,12 @@ header {
             @media (min-width: 768px){
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-                margin-top: 30px;
-                gap: 20px;
             }
 
             @media (min-width: 1024px){
                 display:flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                margin-top: 30px;
                 column-gap: 50px;
             }
 
@@ -279,13 +276,28 @@ header {
         .categorie {
             display: flex;
             justify-content: center;
+            align-items: center;
+            background-color: #1D194E;
+            border-radius: 50%;
+            height: 70px;
+            width: 70px;
 
-            /* Dit is voor de filter icon foto */
-            img {
-                height: 70px;
-                width: auto;
+            img { 
+                height: 30px;
+                width: 30px;
             }
-        }
+
+                @media (min-width: 1024px){
+                height: 80px;
+                width: 80px;
+
+                    img { 
+                    height: 35px;
+                    width: 35px;
+                    }
+                }
+
+            }
 
         /* Dit is voor de categorieen/methodes met foto en tekst */
         .categorie0 {
