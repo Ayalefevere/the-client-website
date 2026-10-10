@@ -89,6 +89,7 @@ header {
                 display: flex;
                 gap: 10px;
                 font-size: 16px;
+                color: #1D194E;
             }    
 
                 button:hover {
@@ -112,9 +113,8 @@ header {
         /* Icon search is zichtbaar op mobile */
         .searchicon {
         display: block;
-        height: 30px;
-        width: 30px;
-        color: #1d194e;
+        height: 25px;
+        width: 25px;
         }
 
         /* Zorgt ervoor dat 2 icoontjes verborgen staan op mobile die in desktop versie staan */
