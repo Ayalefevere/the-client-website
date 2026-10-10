@@ -141,15 +141,14 @@ header {
                 font-size: 14px;
                 display: block;
                 border: transparent;
-                box-shadow: 1px 1px 3px black; 
-                
             }
         }
 
             @media (min-width: 1024px){
             button:hover, 
             a:hover {
-                background-color: #f8bf4e;
+                background-color: #d18b0a;
+                color: white;
                 text-decoration: none;
                 transform: translateY(-2px); 
                 transition: transform 0.2s ease;
