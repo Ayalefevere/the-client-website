@@ -185,7 +185,7 @@ header {
         color: #A3A2B7;
 
             @media (min-width: 1024px){
-                margin-top: 90px;
+                margin-top: 40px;
             }
 
         /* Dit is voor de tekst home, want die is klikbaar met een hover */
