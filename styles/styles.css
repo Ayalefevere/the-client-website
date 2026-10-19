@@ -126,7 +126,6 @@ header {
                 width: 25px;
                 height: 25px;
              }
-
         }
 
         /* Button in de desktop versie verbergen */
@@ -144,15 +143,14 @@ header {
             }
         }
 
+        button:hover, a:hover {
             @media (min-width: 1024px){
-            button:hover, 
-            a:hover {
-                background-color: #d18b0a;
-                color: white;
-                text-decoration: none;
-                transform: translateY(-2px); 
-                transition: transform 0.2s ease;
-                }  
+                    background-color: #d18b0a;
+                    color: white;
+                    text-decoration: none;
+                    transform: translateY(-2px); 
+                    transition: transform 0.2s ease;
+                    }
             } 
     }
    
