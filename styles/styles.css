@@ -90,11 +90,11 @@ header {
                 gap: 10px;
                 font-size: 16px;
                 color: #1D194E;
-            }    
 
-                button:hover {
+                &:hover {
                     text-decoration: underline;
                 }
+            }      
         }
         
     /* Dit is icon search en hamburger menu */
@@ -132,26 +132,25 @@ header {
         button {
         display: none;
 
-            @media (min-width: 1024px){
-                background-color: #FEB51E;
-                color: #1D194E;
-                width: 180px;
-                height: 45px;
-                font-size: 14px;
-                display: block;
-                border: transparent;
-            }
-        }
+        @media (min-width: 1024px){
+            background-color: #FEB51E;
+            color: #1D194E;
+            width: 180px;
+            height: 45px;
+            font-size: 14px;
+            display: block;
+            border: transparent;
 
-        button:hover, a:hover {
-            @media (min-width: 1024px){
-                    background-color: #d18b0a;
-                    color: white;
-                    text-decoration: none;
-                    transform: translateY(-2px); 
-                    transition: transform 0.2s ease;
-                    }
-            } 
+            &:hover, 
+            a:hover {
+                background-color: #d18b0a;
+                color: white;
+                text-decoration: none;
+                transform: translateY(-2px); 
+                transition: transform 0.2s ease;
+            }
+        } 
+        }
     }
    
     /* Dit is de hamburger menu op mobile en tablet  */
@@ -190,14 +189,14 @@ header {
         a, a:visited {
             color: #A3A2B7;
             text-decoration: none;
-        }    
 
-            a:hover {
+            &:hover {
                 color:#A3A2B7 ;
                 text-decoration: underline;
                 text-decoration-color: #A3A2B7;
                 text-underline-offset: 1px;
             }
+        }    
 
         /* Voor de huidige pagina waar je op kijkt */
         .pageactive {
@@ -359,12 +358,11 @@ header {
             font-size: 13px;
             text-align: center;
             justify-items: center;
-            }
 
-            a:hover {
-                border: 0.5px solid #feb31eb6;
+                &:hover {
+                    border: 0.5px solid #feb31eb6;
+                }
             }
-           
     }
 
         
@@ -559,14 +557,14 @@ header {
         a, a:visited {
             text-decoration: none;
             color: #A3A2B7;
-        }        
 
-            a:hover {
+            &:hover {
                 color: #A3A2B7;
                 text-decoration: underline;
                 text-decoration-color: #A3A2B7;
                 text-underline-offset: 1px;
             }
+        }        
 
         /* Voor de active pagina waar je nu op zit */
         .activepage {
@@ -675,14 +673,14 @@ header {
 
             /* De link in de details die naar een pagina gaat */
             a, a:visited {
-            color: #F3F3F6;
-            text-decoration: none;
-            }
+                color: #F3F3F6;
+                text-decoration: none;
 
-                a:hover {
-                color: #D1D0DB;
-                text-decoration: underline;
+                &:hover {
+                    color: #D1D0DB;
+                    text-decoration: underline;
                 }
+            }
         }      
 
         /* De menu in de footer van desktop */        
@@ -705,16 +703,15 @@ header {
                     color: #F3F3F6;
                 }
 
-                /* De link in de details die naar een pagina gaat */
-                a, a:visited {
+            /* De link in de details die naar een pagina gaat */
+            a, a:visited {
                 color: #F3F3F6;
                 text-decoration: none;
-                }
 
-                    a:hover {
                     color: #D1D0DB;
                     text-decoration: underline;
                     }
+            }
             }
         }
 
