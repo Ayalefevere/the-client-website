@@ -27,13 +27,13 @@ font-family: "rigid-square", sans-serif;
 font-size: 16px;
 line-height: 1.4;
 
-    @media (min-width: 768px){
-        max-width:80%;
-    }
+@media (min-width: 768px){
+    max-width:80%;
+}
 
-        @media (min-width: 1024px){
-            max-width: 80%;
-        }
+@media (min-width: 1024px){
+    max-width: 80%;
+}
 }
 
 /* HEADER */
@@ -43,43 +43,43 @@ header {
     justify-content: space-between;
     align-items: center;
 
-        @media (min-width: 1024px){
-            margin-left: -170px;
-            margin-right: -170px;
-            height: 100px;
-            border-bottom: 1px solid #D1D0DB;
-        }
+    @media (min-width: 1024px){
+        margin-left: -170px;
+        margin-right: -170px;
+        height: 100px;
+        border-bottom: 1px solid #D1D0DB;
+    }
 
     /* Dit is het logo foto in de header */
     img { 
         height: auto;
         width: 50px;
 
-            @media (min-width: 1024px){
-                height: auto;
-                width: 70px;
-            }
-    }
+        @media (min-width: 1024px){
+            height: auto;
+            width: 70px;
+        }
+}
 
     /* Linkerkant van de header met logo en navigatiemenu op desktop */
     .leftheader {
         margin-left: 0px;
 
-            @media (min-width: 1024px){
+        @media (min-width: 1024px){
             margin-left: 170px;
             display: flex;
             gap: 30px;
-            }
+        }
 
           /* Navigatiemenu van desktop verbergen */
             .navdesktop {
                 display: none;
 
-                @media (min-width: 1024px){
-                    display: flex;
-                    align-items: center;
-                    gap: 20px;
-                }
+            @media (min-width: 1024px){
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
             }
 
             /* Styling van de button in navigatiemenu */
@@ -112,20 +112,20 @@ header {
     
         /* Icon search is zichtbaar op mobile */
         .searchicon {
-        display: block;
-        height: 25px;
-        width: 25px;
+            display: block;
+            height: 25px;
+            width: 25px;
         }
 
         /* Zorgt ervoor dat 2 icoontjes verborgen staan op mobile die in desktop versie staan */
         img {
             display: none;
 
-             @media (min-width: 1024px){
-                display: block;
-                width: 25px;
-                height: 25px;
-             }
+            @media (min-width: 1024px){
+            display: block;
+            width: 25px;
+            height: 25px;
+            }
         }
 
         /* Button in de desktop versie verbergen */
@@ -152,6 +152,7 @@ header {
         } 
         }
     }
+
    
     /* Dit is de hamburger menu op mobile en tablet  */
     .ham-menu {
@@ -257,17 +258,17 @@ header {
         margin-top: 30px;
         gap: 20px;
 
-            @media (min-width: 768px){
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            }
+        @media (min-width: 768px){
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
 
-            @media (min-width: 1024px){
-                display:flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                column-gap: 50px;
-            }
+        @media (min-width: 1024px){
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 50px;
+        }
 
         /* Dit is voor de filter icon  */
         .categorie {
@@ -284,16 +285,15 @@ header {
                 width: 30px;
             }
 
-                @media (min-width: 1024px){
+            @media (min-width: 1024px){
                 height: 80px;
                 width: 80px;
 
-                    img { 
-                    height: 35px;
-                    width: 35px;
-                    }
+                img { 
+                height: 35px;
+                width: 35px;
                 }
-
+            }
             }
 
         /* Dit is voor de categorieen/methodes met foto en tekst */
@@ -315,8 +315,8 @@ header {
                 width: auto;
 
                 @media (min-width: 1024px){
-                height: 80px;
-                width: auto;
+                    height: 80px;
+                    width: auto;
                 }
             }
         }
@@ -416,9 +416,9 @@ header {
                 grid-template-columns: 1fr 1fr 1fr 1fr;
             }
 
-                @media (min-width: 1024px){
-                    grid-template-columns: 1fr 1fr 1fr 1fr;
-                }
+            @media (min-width: 1024px){
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
 
             /* In het categorien deel staan artikelen met de foto en tekst */
            .onderdeel {
@@ -455,21 +455,16 @@ header {
                 color: #1D194E;
 
                 @media (min-width: 768px){
-                        font-size: 16px;
-                    }
-
-                    @media (min-width: 1024px){
-                        font-size: 16px;
-                    }
-
+                    font-size: 16px;
                 }
 
-            
+                @media (min-width: 1024px){
+                    font-size: 16px;
+                }
+                }
             }
 
             
-
-
             /* Dit is om 2 onderdelen in het deel over 2 kolommen te doen    */
             .onderdeel:nth-of-type(1) {
                 grid-column: 1 / -1;
@@ -505,7 +500,7 @@ header {
                 }
 
                 @media (min-width: 1024px){
-                height: 95%;
+                    height: 95%;
                 }
             }
 
@@ -525,11 +520,11 @@ header {
                 height:auto;
 
                 @media (min-width: 768px){
-                height: 95%;
+                    height: 95%;
                 }
 
                 @media (min-width: 1024px){
-                height: 95%;
+                    height: 95%;
                 }
             }
         }
@@ -548,10 +543,10 @@ header {
         width: 100%;
         list-style: none;
 
-            @media (min-width: 1024px){
-                font-size: 16px;
-                margin-top: 50px;
-            }
+        @media (min-width: 1024px){
+            font-size: 16px;
+            margin-top: 50px;
+        }
 
         /* Dit is voor de link dat je naar een andere pagina kan */
         a, a:visited {
@@ -639,13 +634,13 @@ header {
             gap: 30px;
             cursor: pointer;
 
-                @media (min-width: 768px){
-                    max-width: 70%;
-                }
+            @media (min-width: 768px){
+                max-width: 70%;
+            }
 
-                @media (min-width: 1024px){
-                    display: none;
-                }
+            @media (min-width: 1024px){
+                display: none;
+            }
 
             /* Het menu in een summary */
             summary {
@@ -667,8 +662,8 @@ header {
 
             /* Dit is voor de tekst in de details */
             details {
-            font-size: 16px;
-            color: #F3F3F6;
+                font-size: 16px;
+                color: #F3F3F6;
             }
 
             /* De link in de details die naar een pagina gaat */
@@ -687,27 +682,28 @@ header {
         .menufooterdesktop {
             display: none;
 
-             @media (min-width: 1024px){
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-end;
-                position: absolute;
-                right: 210px;
-                gap: 80px;
+            @media (min-width: 1024px){
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            position: absolute;
+            right: 210px;
+            gap: 80px;
 
-                h2 {
-                    color: #FEB51E;
-                }
+            h2 {
+                color: #FEB51E;
+            }
 
-                p {
-                    color: #F3F3F6;
-                }
+            p {
+                color: #F3F3F6;
+            }
 
             /* De link in de details die naar een pagina gaat */
             a, a:visited {
                 color: #F3F3F6;
                 text-decoration: none;
 
+                &:hover {
                     color: #D1D0DB;
                     text-decoration: underline;
                     }
@@ -725,13 +721,13 @@ header {
             text-align: center;
             color: #F3F3F6;
 
-                @media (min-width: 1024px){
-                    padding: 0 200px;
-                    gap: 170px;
-                    margin-top: 350px;
-                    display: flex;
-                    justify-content: space-between;
-                }
+            @media (min-width: 1024px){
+                padding: 0 200px;
+                gap: 170px;
+                margin-top: 350px;
+                display: flex;
+                justify-content: space-between;
+            }
 
             /* Dit is voor de copyright tekst */
             p {
@@ -758,7 +754,6 @@ header {
                 @media (min-width: 1024px){
                     gap:50px;   
                 }
-
             }
         }
     }
